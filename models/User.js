@@ -10,5 +10,5 @@ const userSchema = new Schema({
   following: [{ type: Schema.Types.ObjectId, ref: "User" }],
 }, { timestamps: true });
 
-const User = model("User", userSchema);
+const User = model("Users", userSchema);
 export default User;
